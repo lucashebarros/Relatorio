@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Configurações da página
 st.set_page_config(page_title="Proposta de Redução de Custos Power BI", layout="centered")
@@ -11,7 +12,6 @@ st.header("Introdução")
 st.write("""
 O portal A2M oferece uma solução White Label, **utilizando o Power BI Embedded**, que permite otimizar a gestão de relatórios e reduzir os custos com licenciamento.
 """)
-
 
 # Funcionamento na prática
 st.header("Funcionamento na Prática")
@@ -38,6 +38,24 @@ st.write("""
 - **Economia Mensal**: R$ 502,50 em relação ao licenciamento Microsoft.
 - **Economia Anual**: R$ 6.030,00.
 """)
+
+# Tabela de Comparação de Economia de Custo
+st.header("Comparação de Custos: Power BI Convencional vs Portal A2M")
+
+# Dados para a tabela
+data = {
+    "Licenciamento": ["Microsoft Power BI PRO", "Portal A2M + Power BI Embedded"],
+    "Custo Mensal (15 usuários)": ["R$ 892,50", "R$ 390,00"],
+    "Custo Anual (15 usuários)": ["R$ 10.710,00", "R$ 4.680,00"],
+    "Economia Mensal": ["-", "R$ 502,50"],
+    "Economia Anual": ["-", "R$ 6.030,00"]
+}
+
+# Criação do DataFrame
+df = pd.DataFrame(data)
+
+# Exibição da tabela
+st.table(df)
 
 # Recursos adicionais
 st.header("Recursos e Features")
