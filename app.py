@@ -34,21 +34,19 @@ st.write("""
 st.header("Proposta de Custo")
 st.write("""
 - **Custo de Implantação**: R$ 700,00, parcelado em até 3x
-- **Valor por Assinatura**: R$ 26,00 por usuário (para 15 usuários).
-- **Economia Mensal**: R$ 502,50 em relação ao licenciamento Microsoft.
-- **Economia Anual**: R$ 6.030,00.
+- **Valor por Assinatura**: R$ 26,00 por usuário (para 5 usuários).
 """)
 
 # Tabela de Comparação de Economia de Custo
-st.header("Comparação de Custos: Power BI Convencional vs Portal A2M")
+st.header("Comparação de Custos: Situação Atual vs Portal A2M")
 
 # Dados para a tabela
 data = {
-    "Licenciamento": ["Microsoft Power BI PRO", "Portal A2M + Power BI Embedded"],
-    "Custo Mensal (15 usuários)": ["R$ 892,50", "R$ 390,00"],
-    "Custo Anual (15 usuários)": ["R$ 10.710,00", "R$ 4.680,00"],
-    "Economia Mensal": ["-", "R$ 502,50"],
-    "Economia Anual": ["-", "R$ 6.030,00"]
+    "Descrição": ["Licenciamento Atual (Power BI Pro)", "Licenciamento Futuro (a partir de Abril)", "Portal A2M + Power BI Embedded"],
+    "Quantidade de Licenças": [5, 5, 5],
+    "Custo por Licença": ["R$ 59,50", "R$ 81,30", "R$ 26,00"],
+    "Custo Mensal Total": ["R$ 297,50", "R$ 406,50", "R$ 130,00"],
+    "Custo Anual Total": ["R$ 3.570,00", "R$ 4.878,00", "R$ 1.560,00"],
 }
 
 # Criação do DataFrame
@@ -56,6 +54,17 @@ df = pd.DataFrame(data)
 
 # Exibição da tabela
 st.table(df)
+
+# Cálculo das economias
+st.write("""
+**Economias Potenciais:**
+
+- **Economia Mensal Atual**: R$ 297,50 - R$ 130,00 = **R$ 167,50**
+- **Economia Anual Atual**: R$ 3.570,00 - R$ 1.560,00 = **R$ 2.010,00**
+
+- **Economia Mensal Futura (a partir de Abril)**: R$ 406,50 - R$ 130,00 = **R$ 276,50**
+- **Economia Anual Futura**: R$ 4.878,00 - R$ 1.560,00 = **R$ 3.318,00**
+""")
 
 # Recursos adicionais
 st.header("Recursos e Features")
@@ -77,5 +86,7 @@ st.write("""
 # Conclusão
 st.header("Conclusão")
 st.write("""
-A proposta A2M representa uma oportunidade de otimizar a gestão de relatórios e reduzir os custos do Power BI, fornecendo um portal eficiente e integrado que simplifica o controle e acesso.
+A proposta da A2M representa uma oportunidade de otimizar a gestão de relatórios e reduzir os custos do Power BI, fornecendo um portal eficiente e integrado que simplifica o controle e acesso.
+
+Com a iminente elevação dos custos das licenças do Power BI Pro a partir de Abril, a adoção do Portal A2M torna-se ainda mais vantajosa, proporcionando economias significativas e melhor gerenciamento dos recursos de BI.
 """)
