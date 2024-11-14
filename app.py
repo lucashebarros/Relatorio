@@ -47,6 +47,7 @@ data = {
     "Custo por Licença": ["R$ 59,50", "R$ 81,30", "R$ 26,00"],
     "Custo Mensal Total": ["R$ 297,50", "R$ 406,50", "R$ 130,00"],
     "Custo Anual Total": ["R$ 3.570,00", "R$ 4.878,00", "R$ 1.560,00"],
+    "Taxa de Implantação": ["-", "-", "R$ 700,00"]
 }
 
 # Criação do DataFrame
