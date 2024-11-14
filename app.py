@@ -20,6 +20,12 @@ O portal possui três níveis de usuários:
 - **User Master**: Visualiza a empresa e gerencia filiais e departamentos.
 - **User ADM**: Distribui relatórios aos departamentos e usuários.
 - **User Visualizador**: Acessa relatórios específicos com opção de favoritos.
+
+Domínio Personalizado pago
+Aplicativo para TV Smart para espelhar os BIs
+Tem sistema de chamado interno para o ADM
+Impede de compartilhar dashboards por link
+Tem um sistema de notificação, inclusive notificação de manutenção o dashboard
 """)
 
 # Vantagens
@@ -30,12 +36,6 @@ st.write("""
 3. **Redução de Custos**: Menor necessidade de licenças PRO/PREMIUM, economizando mensalmente.
 """)
 
-# Proposta de Custo
-st.header("Proposta de Custo")
-st.write("""
-- **Custo de Implantação**: R$ 700,00, parcelado em até 3x
-- **Valor por Assinatura**: R$ 26,00 por usuário (para 5 usuários).
-""")
 
 # Tabela de Comparação de Economia de Custo
 st.header("Comparação de Custos: Situação Atual vs Portal A2M")
