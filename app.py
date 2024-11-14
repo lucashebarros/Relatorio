@@ -17,9 +17,9 @@ O portal A2M oferece uma solução White Label, **utilizando o Power BI Embedded
 st.header("Funcionamento na Prática")
 st.write("""
 1. O portal possui três níveis de usuários:
-- **User Master**: Visualiza a empresa e gerencia filiais e departamentos.
-- **User ADM**: Distribui relatórios aos departamentos e usuários.
-- **User Visualizador**: Acessa relatórios específicos com opção de favoritos.
+    - **User Master**: Visualiza a empresa e gerencia filiais e departamentos.
+    - **User ADM**: Distribui relatórios aos departamentos e usuários.
+    - **User Visualizador**: Acessa relatórios específicos com opção de favoritos.
 
 2. Domínio Personalizado pago
 3. Aplicativo para TV Smart para espelhar os BIs
