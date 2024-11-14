@@ -60,11 +60,11 @@ st.table(df)
 st.write("""
 **Economias Potenciais:**
 
-- **Economia Mensal Atual**: 297,50 - 130,00" = **R$ 167,50**
-- **Economia Anual Atual**: 3.570,00 - 1.560,00" = **R$ 2.010,00**
+- **Economia Mensal Atual**: 297,50 - 130,00 = **R$ 167,50**
+- **Economia Anual Atual**: 3.570,00 - 1.560,00 = **R$ 2.010,00**
 
-- **Economia Mensal Futura (a partir de Abril)**: 406,50 - 130,00" = **R$ 276,50**
-- **Economia Anual Futura**: 4.878,00 - 1.560,00" = **R$ 3.318,00**
+- **Economia Mensal Futura (a partir de Abril)**: 406,50 - 130,00 = **R$ 276,50**
+- **Economia Anual Futura**: 4.878,00 - 1.560,00 = **R$ 3.318,00**
 """)
 
 # Recursos adicionais
